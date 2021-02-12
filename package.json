@@ -1,0 +1,23 @@
+{
+  "name": "basic-sticky-footer",
+  "version": "1.0.0",
+  "description": "How to create a basic sticky footer for your web site or application",
+  "main": "index.js",
+  "scripts": {
+    "slides": "npx reveal-md basic-sticky-footer.md",
+    "customcss": "npx reveal-md basic-sticky-footer.md -w --css custom.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/basic-sticky-footer.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/basic-sticky-footer/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/basic-sticky-footer#readme",
+  "devDependencies": {
+    "reveal-md": "^5.0.0"
+  }
+}
