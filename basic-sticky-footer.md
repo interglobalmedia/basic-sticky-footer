@@ -242,6 +242,12 @@ A `property declaration` of `flex-basis: auto` ***does not*** `define` any ***sp
 
 ***Here***, the `inherit value` for the `color property` will ***simply*** be the `default color` ***set*** by the `user-agent` (`browser`), ***because*** I did ***not apply*** the `color property` on the `body element selector` (***which is*** the `parent` of the `footer element`). ***That*** `color` is `black`.
 
+***Next***, I ***applied*** the `font-size: 1.2rem;` ***property declaration*** to ***increase*** the `size` of the `footer font`, ***because*** the ***default*** was ***too small***. ***Using*** `rem` ***instead*** of `px` (***pixels***) ***means that*** the `font size` of the `footer` will `adapt` ***relative*** to the `viewport size`.
+
+<aside class="notes">
+	Note: Show the students what I mean by this by demonstrating what it looks like on various devices in Chrome Developer Tools.
+</aside>
+
 In my ***final*** `CSS` for the `footer` ***itself***, I ***don't add*** the `color: inherit;` ***property declaration***. This was ***just*** for the ***purpose*** of the `demo` so that you ***better understand*** what the `inherit property value` ***does***.
 
 </section>
