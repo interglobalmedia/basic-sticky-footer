@@ -142,7 +142,7 @@ The `flex property` is the ***shorthand*** for the ***following*** `CSS properti
 <section class="section">
     <h2 class="sentence">The flex-grow property</h2>
 
-[flex-grow](https://cssreference.io/property/flex-grow/): ***this*** `CSS property` ***defines*** `how much` a `flexbox item` ***should grow*** if there's ***space available***. The ***default*** `value` for `flex-grow` is `0`. With a ***value*** of `0`, the `element` will ***not grow*** if there ***is*** `space` ***available***. It will ***only use*** the `space` it ***needs***.
++ [flex-grow](https://cssreference.io/property/flex-grow/): ***this*** `CSS property` ***defines*** `how much` a `flexbox item` ***should grow*** if there's ***space available***. The ***default*** `value` for `flex-grow` is `0`. With a ***value*** of `0`, the `element` will ***not grow*** if there ***is*** `space` ***available***. It will ***only use*** the `space` it ***needs***.
 
 `flex-grow` ***accepts*** a ***unitless*** `value` that ***serves*** as a `proportion`. It ***dictates*** the ***amount*** of `available space` ***inside*** the `flex container` the `item` ***should take up***.
 
@@ -182,7 +182,9 @@ In our `flex` ***shorthand*** `property declaration`, the `flex-shrink` ***prope
 
 The `flex-basis property` is ***specified*** as ***either*** the `keyword` ***content*** or a `"width"`. In ***our*** `example`, we are ***specifying/targeting*** a `"width"` ***with*** the `auto keyword`.
 
-The `auto` ***keyword*** (which is ***what*** is `being used` in the `value` of our `flex-basis property` of the `flex` ***shorthand*** `property value`), ***means*** that the `size` of the ***targeted*** `flex-item`(s) is ***determined*** `relative` to the `flex-grow` ***and*** the `flex-shrink` ***values*** `set upon` the `flex-item`(s). So if we ***set*** the ***following*** `flex shorthand` on ***two*** `flex items` ***within*** the `flex container`, for ***example***:
+The `auto` ***keyword*** (which is ***what*** is `being used` in the `value` of our `flex-basis property` of the `flex` ***shorthand*** `property value`), ***means*** that the `size` of the ***targeted*** `flex-item`(s) is ***determined*** `relative` to the `flex-grow` ***and*** the `flex-shrink` ***values*** `set upon` the `flex-item`(s).
+
+If we ***set*** the ***following*** `flex shorthand` on ***two*** `flex items` ***within*** the `flex container`, for ***example***:
 
 The `HTML` ***markup***:
 
@@ -204,7 +206,9 @@ The `CSS` ***code***:
 }
 ```
 
-***Initially***, ***before*** any `re-sizing` ***occurs***, the `flex-item` ***with*** the`.flex2` ***class*** is ***approximately*** `half` the `size` of the `flex-item` ***with*** the `.flex1` ***class***, ***taking*** into ***account*** any `margins` or `padding`. Its `size` is ***automatically adjusted*** by the `browser`. As the `viewport` ***increases*** in `width`, for ***example***, the `flex-item` ***with*** the `.flex2` ***class*** becomes ***relatively*** `twice` as `big` as the `flex-item` ***with*** the `.flex1` ***class***. ***That*** is ***thanks*** to the ***first value*** of `2`, ***which represents*** the `flex-grow` ***property***. ***But*** as the `viewport` ***decreases*** in `width`, the `flex-item` ***with*** the ***class*** of `.flex2` ***shrinks*** to ***approximately*** `half` the `size` of the `flex-item` ***with*** the ***class*** of `.flex1`. This is ***thanks*** to the `flex-shrink` ***value*** of `2`.
+***Initially***, ***before*** any `re-sizing` ***occurs***, the `flex-item` ***with*** the`.flex2` ***class*** is ***approximately*** `half` the `size` of the `flex-item` ***with*** the `.flex1` ***class***, ***taking*** into ***account*** any `margins` or `padding`. Its `size` is ***automatically adjusted*** by the `browser`. As the `viewport` ***increases*** in `width`, for ***example***, the `flex-item` ***with*** the `.flex2` ***class*** becomes ***relatively*** `twice` as `big` as the `flex-item` ***with*** the `.flex1` ***class***. ***That*** is ***thanks*** to the ***first value*** of `2`, ***which represents*** the `flex-grow` ***property***.
+
+***But*** as the `viewport` ***decreases*** in `width`, the `flex-item` ***with*** the ***class*** of `.flex2` ***shrinks*** to ***approximately*** `half` the `size` of the `flex-item` ***with*** the ***class*** of `.flex1`. This is ***thanks*** to the `flex-shrink` ***value*** of `2`.
 
 We ***shall*** `see better` ***how*** this all ***works*** when we ***start working*** with `columns`, ***primarily*** for the `portfolio` ***page***.
 
@@ -217,11 +221,13 @@ We ***shall*** `see better` ***how*** this all ***works*** when we ***start work
 ---
 
 <section class="section">
-    <h2 class="sentence"><code>flex-basis: 0</code> vs <code>flex-basis: auto</code></h2>
+    <h2 class="sentence">flex-basis: 0 <code>vs</code> flex-basis: auto</h2>
 
 As ***mentioned earlier***, `numeric values` of the `flex` ***shorthand*** `property` are ***interpreted*** as ***specific*** `widths`, so `0` ***would*** be the ***same*** as ***specifying*** `width: 0` (and ***would collapse*** the `element` to its ***smallest possible*** `width` ***given*** its ***content***, or to `0` ***itself*** if the `content` is ***hidden***).
 
-A `property declaration` of `flex-basis: auto` ***does not*** `define` any ***specific starting*** `width` ***for*** the `flex-item`. It is ***also*** the ***default*** `value` of the `flex-basis` ***property***. A `value` of `auto` ***means*** that the `length` is ***equal*** to the `length` of the `flexible item`. If the `item` ***itself*** has `no length` ***specified***, the `length` will be ***according*** to its ***content***. This `concept` is ***similar*** in a way to ***using*** the `auto `***keyword*** as the `value` of the `margin` ***properties***. ***Like*** `margin-right: auto` or `margin-left: auto`.
+A `property declaration` of `flex-basis: auto` ***does not*** `define` any ***specific starting*** `width` ***for*** the `flex-item`. It is ***also*** the ***default*** `value` of the `flex-basis` ***property***.
+
+A `value` of `auto` ***means*** that the `length` is ***equal*** to the `length` of the `flexible item`. If the `item` ***itself*** has `no length` ***specified***, the `length` will be ***according*** to its ***content***. This `concept` is ***similar*** in a way to ***using*** the `auto `***keyword*** as the `value` of the `margin` ***properties***. ***Like*** `margin-right: auto` or `margin-left: auto`.
 
 </section>
 
@@ -234,9 +240,10 @@ A `property declaration` of `flex-basis: auto` ***does not*** `define` any ***sp
 
 ```css
 .site-credits {
+	color: inherit;
+	flex-shrink: 0;
+    font-size: 1.2rem;
     text-align: center;
-    color: inherit;
-	font-size: 1.2rem;
 }
 ```
 
@@ -244,11 +251,11 @@ A `property declaration` of `flex-basis: auto` ***does not*** `define` any ***sp
 
 ***Next***, I ***applied*** the `font-size: 1.2rem;` ***property declaration*** to ***increase*** the `size` of the `footer font`, ***because*** the ***default*** was ***too small***. ***Using*** `rem` ***instead*** of `px` (***pixels***) ***means that*** the `font size` of the `footer` will `adapt` ***relative*** to the `viewport size`.
 
-<aside class="notes">
-	Note: Show the students what I mean by this by demonstrating what it looks like on various devices in Chrome Developer Tools.
-</aside>
-
 In my ***final*** `CSS` for the `footer` ***itself***, I ***don't add*** the `color: inherit;` ***property declaration***. This was ***just*** for the ***purpose*** of the `demo` so that you ***better understand*** what the `inherit property value` ***does***.
+
+<aside class="notes">
+	Note: Show the students what I mean by the `footer font` adapting ***relative*** to the `viewport size` by demonstrating what it looks like on **various devices** in `Chrome Developer Tools`.
+</aside>
 
 </section>
 
