@@ -30,9 +30,9 @@ The `HTML markup`:
 
 ```html
 <body>
-    <div class="Site-content">
+    <main class="Site-content">
 
-    </div>
+    </main>
     <footer class="site-credits">© 2021 Maria D. Campbell</footer>
 </body>
 ```
