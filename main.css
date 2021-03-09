@@ -1,0 +1,67 @@
+/* basic Reset*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Navigation Styling */
+
+nav {
+    width: 100vw;
+    background: #D6EFFF;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    list-style-type: none;
+    margin: 2vw;
+    font-size: 2.75vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-family: monospace;
+}
+
+a:hover {
+    color: #D6EFFF;
+    background: rgba(47, 102, 144, 0.7);
+}
+
+@media only screen and (max-width: 899px) {
+    ul {
+        flex-direction: column;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+/* Sticky Footer Styling */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1 0 auto;
+}
+
+.site-credits {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
